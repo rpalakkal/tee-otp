@@ -1,0 +1,16 @@
+[package]
+name = "tee-otp"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = "0.7.5"
+base32 = "0.5.1"
+env_logger = "0.11.5"
+eyre = "0.6.12"
+rand = "0.8.5"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0.122"
+totp-rs = { version = "5.6.0", features = ["qr"] }
+tokio = { version = "1.38.0", features = ["macros", "rt-multi-thread", "signal"] }
+tower-http = {version = "0.5.2", features =["cors"]}
